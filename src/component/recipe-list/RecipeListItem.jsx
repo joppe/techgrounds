@@ -1,6 +1,8 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 
+import { RecipeProp } from '../../prop-types/RecipeProp';
+
 export function RecipeListItem({ recipe, isActive, toggleActive }) {
   return (
     <li key={recipe.title} className="list-group-item">
@@ -19,26 +21,7 @@ export function RecipeListItem({ recipe, isActive, toggleActive }) {
 }
 
 RecipeListItem.propTypes = {
-  recipe: PropTypes.shape({
-    id: PropTypes.number,
-    title: PropTypes.string,
-    description: PropTypes.string,
-    cooking_time: PropTypes.number,
-    images: PropTypes.arrayOf(
-      PropTypes.shape({
-        src: PropTypes.string,
-        caption: PropTypes.string,
-      }),
-    ),
-    ingredients: PropTypes.arrayOf(
-      PropTypes.shape({
-        name: PropTypes.string,
-        quantity: PropTypes.number,
-        unit: PropTypes.string,
-      }),
-    ),
-    instructions: PropTypes.arrayOf(PropTypes.string),
-  }),
+  recipe: RecipeProp,
   isActive: PropTypes.bool,
   toggleActive: PropTypes.func,
 };
