@@ -1,3 +1,5 @@
+import './app.css';
+
 import React from 'react';
 
 import { RecipeContextProvider } from '../../context/recipe/RecipeContext';
