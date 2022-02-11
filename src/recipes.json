@@ -1,6 +1,7 @@
 {
   "recipes": [
     {
+      "id": 1,
       "title": "Risotto",
       "description": "Basis recept voor risotto",
       "cooking_time": 30,
@@ -45,6 +46,7 @@
       "instructions": ["Stap 1", "Stap 2"]
     },
     {
+      "id": 2,
       "title": "Tomatensoep",
       "description": "Basis recept voor tomatensoep",
       "images": [
