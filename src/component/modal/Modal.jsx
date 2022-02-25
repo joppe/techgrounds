@@ -21,7 +21,7 @@ export function Modal({ onClose, children }) {
           {children}
         </div>
       </div>
-      <div className="modal-backdrop show"></div>
+      <div className="modal-backdrop show" />
     </>
   );
 }
