@@ -1,8 +1,9 @@
 import PropTypes from 'prop-types';
-import React, { createContext, useContext, useReducer, useState } from 'react';
+import React, { createContext, useContext, useState } from 'react';
 
 import data from '../../../recipes.json';
 import { guid } from '../../helper/guid';
+import { usePersistedState } from '../../helper/usePersistedState';
 
 const RecipeContext = createContext({
   recipes: [],
@@ -53,7 +54,7 @@ function reducer(state, action) {
 
 export function RecipeContextProvider({ children }) {
   const [feedback, setFeedback] = useState('');
-  const [state, dispatch] = useReducer(reducer, initialState);
+  const [state, dispatch] = usePersistedState(reducer, initialState, 'recipes');
 
   function add(recipe) {
     dispatch({ type: ADD_RECIPE, recipe });
