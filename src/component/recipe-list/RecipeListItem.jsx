@@ -21,6 +21,11 @@ export function RecipeListItem({ recipe, isActive, toggleActive }) {
           onClick={() => toggleActive(recipe.id)}
         >
           <span>{recipe.title}</span>
+          <span className="fs-6 text">
+            <i className="bi bi-clock" aria-hidden="true" />{' '}
+            <span className="visually-hidden">Bereidingstijd </span>
+            {recipe.cooking_time}m
+          </span>
         </button>
       </h2>
 
