@@ -1,0 +1,93 @@
+{
+  "recipes": [
+    {
+      "id": "ad0ab7c4-cdb1-1221-5677-58176758aba3",
+      "title": "Risotto",
+      "description": "Basis recept voor risotto",
+      "cooking_time": 30,
+      "image": "/image/recipe/risotto.jpg",
+      "ingredients": [
+        {
+          "name": "kippenbouillontablet",
+          "quantity": 1,
+          "unit": ""
+        },
+        {
+          "name": "heet water",
+          "quantity": 750,
+          "unit": "ml"
+        },
+        {
+          "name": "ongezouten roomboter",
+          "quantity": 30,
+          "unit": "g"
+        },
+        {
+          "name": "risottorijst",
+          "quantity": 300,
+          "unit": "g"
+        },
+        {
+          "name": "paddenstoelenmix",
+          "quantity": 200,
+          "unit": "g"
+        },
+        {
+          "name": "middlegrote ui",
+          "quantity": 1,
+          "unit": ""
+        }
+      ],
+      "instructions": [{ "text": "Stap 1" }, { "text": "Stap 2" }]
+    },
+    {
+      "id": "377ef03d-32e5-184e-ba8f-1c2695eba6a9",
+      "title": "Tomatensoep",
+      "description": "Basis recept voor tomatensoep",
+      "cooking_time": 25,
+      "image": "/image/recipe/tomato-soup.jpg",
+      "ingredients": [
+        {
+          "name": "middelgrote ui",
+          "quantity": 2,
+          "unit": ""
+        },
+        {
+          "name": "knoflook",
+          "quantity": 2,
+          "unit": "tenen"
+        },
+        {
+          "name": "tomaten",
+          "quantity": 5,
+          "unit": ""
+        },
+        {
+          "name": "winterpeen",
+          "quantity": 1,
+          "unit": ""
+        },
+        {
+          "name": "tomatenpuree",
+          "quantity": 70,
+          "unit": "g"
+        },
+        {
+          "name": "groentebouillon",
+          "quantity": 2,
+          "unit": "blokjes"
+        },
+        {
+          "name": "water",
+          "quantity": 800,
+          "unit": "ml"
+        }
+      ],
+      "instructions": [
+        { "text": "Stap 1" },
+        { "text": "Stap 2" },
+        { "text": "Stap 3" }
+      ]
+    }
+  ]
+}
