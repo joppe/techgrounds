@@ -6,6 +6,7 @@ import React, { useState } from 'react';
 import { RecipeProp } from '../../prop-types/RecipeProp';
 import { Panel } from '../tab/Panel';
 import { Tab } from '../tab/Tab';
+import { Controls } from './Controls';
 import { RecipeImage } from './RecipeImage';
 import { RecipeIngredients } from './RecipeIngredients';
 import { RecipeInstructions } from './RecipeInstructions';
@@ -33,6 +34,8 @@ export function Recipe({ recipe, labelledby, id, isHidden }) {
 
   return (
     <div role="region" aria-labelledby={labelledby} id={id} hidden={isHidden}>
+      <Controls recipe={recipe} />
+
       <p>{recipe.description}</p>
 
       <RecipeImage image={recipe.image} caption={recipe.title} />
