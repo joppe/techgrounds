@@ -19,5 +19,5 @@ export function Panel({ id, isActive, children }) {
 Panel.propTypes = {
   id: PropTypes.string.isRequired,
   isActive: PropTypes.bool.isRequired,
-  children: PropTypes.element.isRequired,
+  children: PropTypes.node.isRequired,
 };
