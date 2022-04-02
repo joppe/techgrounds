@@ -1,0 +1,15 @@
+.divider {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.ruler {
+    position: absolute;
+    top: 0;
+    z-index: 100;
+    height: 100%;
+    width: 5px;
+    background-color: var(--bs-blue);
+    cursor: move;
+}
