@@ -1,0 +1,31 @@
+{
+  "name": "@techgrounds-webdev/image-compare",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && cp -r image dist/",
+    "preview": "vite preview"
+  },
+  "importSort": {
+    ".js, .jsx": {
+      "style": "module"
+    }
+  },
+  "dependencies": {
+    "prop-types": "^15.8.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^1.0.7",
+    "eslint": "^8.8.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.28.0",
+    "import-sort-style-module": "^6.0.0",
+    "prettier": "^2.5.1",
+    "prettier-plugin-import-sort": "^0.0.7",
+    "vite": "^2.8.0"
+  }
+}
